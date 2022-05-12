@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1836953935784358559}
   - component: {fileID: 3675405622149276525}
   - component: {fileID: 6441984012730924461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4271866923878545315}
   - component: {fileID: 2139103046405345753}
   - component: {fileID: 6631215933654864782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8837817923992969229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 2844946145003049776}
   - component: {fileID: 7126278566167966973}
   - component: {fileID: 6983800221119298484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 558302917833543829}
   - component: {fileID: 249860759564611724}
   - component: {fileID: 362268224756121034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Edge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 8726910166970616972}
   - component: {fileID: 6324406936393539203}
   - component: {fileID: 2517563981789422820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 1968748296978057922}
   - component: {fileID: 1627735232708019240}
   - component: {fileID: 7320659457840098518}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 6286924416005379239}
   - component: {fileID: 1812554082351660417}
   - component: {fileID: 2514132167898910983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flipper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9052957047280351739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
