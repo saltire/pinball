@@ -12,7 +12,14 @@ public class LightRunwayScript : MonoBehaviour {
   void Start() {
     lights = GetComponentsInChildren<LightScript>();
 
+    MaterialPropertyBlock block = new MaterialPropertyBlock();
+
     foreach ((LightScript light, int i) in lights.Select((light, i) => (light, i))) {
+      Renderer render = light.GetComponent<Renderer>();
+      render.GetPropertyBlock(block);
+      block.SetColor("_EmissionColor", Color.black);
+      render.SetPropertyBlock(block);
+
       light.color = Color.HSVToRGB((float)i / lights.Length, 1, 1);
     }
 
