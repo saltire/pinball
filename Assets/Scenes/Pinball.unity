@@ -644,5 +644,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table
       objectReference: {fileID: 0}
+    - target: {fileID: 8817216139405339791, guid: 069d066d6b75bd640ae5f405ee7c89cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817216139405339791, guid: 069d066d6b75bd640ae5f405ee7c89cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.34
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 069d066d6b75bd640ae5f405ee7c89cd, type: 3}
