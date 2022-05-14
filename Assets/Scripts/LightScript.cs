@@ -4,7 +4,7 @@ public class LightScript : MonoBehaviour {
   public Color color = Color.white;
   public float intensity = 2f;
 
-  void Start() {
+  void Awake() {
     Renderer render = GetComponent<Renderer>();
     MaterialPropertyBlock block = new MaterialPropertyBlock();
     render.GetPropertyBlock(block);
