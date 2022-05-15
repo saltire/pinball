@@ -8,8 +8,14 @@ public class PlungerScript : MonoBehaviour {
 
   Rigidbody rb;
 
+  public AudioClip releaseSound;
+
+  AudioSource source;
+
   void Start() {
     rb = GetComponent<Rigidbody>();
+
+    source = FindObjectOfType<AudioSource>();
   }
 
   void FixedUpdate() {
@@ -17,6 +23,12 @@ public class PlungerScript : MonoBehaviour {
 
     if (Input.GetKey("down")) {
       rb.AddRelativeForce(Vector3.down * pullForce);
+    }
+  }
+
+  void Update() {
+    if (Input.GetKeyUp("down")) {
+      source.PlayOneShot(releaseSound);
     }
   }
 }

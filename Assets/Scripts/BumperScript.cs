@@ -12,6 +12,14 @@ public class BumperScript : MonoBehaviour {
   public Rigidbody cone;
   public Light bumperLight;
 
+  public AudioClip sound1;
+  public AudioClip sound2;
+  AudioSource source;
+
+  void Start() {
+    source = FindObjectOfType<AudioSource>();
+  }
+
   void Update() {
     if (bumperLight.intensity > 1) {
       bumperLight.intensity = Mathf.Max(1,
@@ -25,7 +33,11 @@ public class BumperScript : MonoBehaviour {
   }
 
   void OnTriggerEnter(Collider other) {
-    cone.AddRelativeForce(Vector3.up * downwardForce, ForceMode.Impulse);
-    bumperLight.intensity = hitIntensity;
+    if (other.gameObject.CompareTag("Ball")) {
+      cone.AddRelativeForce(Vector3.up * downwardForce, ForceMode.Impulse);
+      bumperLight.intensity = hitIntensity;
+
+      source.PlayOneShot(Random.Range(0, 2) > 0 ? sound1 : sound2);
+    }
   }
 }

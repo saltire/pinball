@@ -10,9 +10,14 @@ public enum Side {
 public class FlipperScript : MonoBehaviour {
   public Side side;
 
+  public AudioClip soundOn;
+  public AudioClip soundOff;
+
   HingeJoint hinge;
+  AudioSource source;
 
   void Start() {
+    source = FindObjectOfType<AudioSource>();
     hinge = GetComponent<HingeJoint>();
   }
 
@@ -21,9 +26,11 @@ public class FlipperScript : MonoBehaviour {
 
     if (Input.GetKeyDown(key)) {
       hinge.useMotor = true;
+      source.PlayOneShot(soundOn);
     }
     else if (Input.GetKeyUp(key)) {
       hinge.useMotor = false;
+      source.PlayOneShot(soundOff);
     }
   }
 }

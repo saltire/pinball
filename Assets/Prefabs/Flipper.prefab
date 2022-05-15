@@ -722,6 +722,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   side: 1
+  soundOn: {fileID: 8300000, guid: d355d977540cac64698d4714b8f53747, type: 3}
+  soundOff: {fileID: 8300000, guid: eb832e41f55c825439fac4f5b3336097, type: 3}
 --- !u!1 &8093933036732869231
 GameObject:
   m_ObjectHideFlags: 0
