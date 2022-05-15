@@ -526,10 +526,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2014591036610377977, guid: 069d066d6b75bd640ae5f405ee7c89cd, type: 3}
-      propertyPath: m_Name
-      value: Goat Light
-      objectReference: {fileID: 0}
     - target: {fileID: 4197465987959469994, guid: 069d066d6b75bd640ae5f405ee7c89cd, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -573,10 +569,6 @@ PrefabInstance:
     - target: {fileID: 4197465987959469994, guid: 069d066d6b75bd640ae5f405ee7c89cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6524296357758554208, guid: 069d066d6b75bd640ae5f405ee7c89cd, type: 3}
-      propertyPath: m_Intensity
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8679791958658558515, guid: 069d066d6b75bd640ae5f405ee7c89cd, type: 3}
       propertyPath: m_Name

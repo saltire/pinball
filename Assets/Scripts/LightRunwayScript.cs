@@ -15,10 +15,7 @@ public class LightRunwayScript : MonoBehaviour {
     MaterialPropertyBlock block = new MaterialPropertyBlock();
 
     foreach ((LightScript light, int i) in lights.Select((light, i) => (light, i))) {
-      Renderer render = light.GetComponent<Renderer>();
-      render.GetPropertyBlock(block);
-      block.SetColor("_EmissionColor", Color.black);
-      render.SetPropertyBlock(block);
+      light.SetColor(Color.black, 1);
 
       light.color = Color.HSVToRGB((float)i / lights.Length, 1, 1);
     }
@@ -30,16 +27,11 @@ public class LightRunwayScript : MonoBehaviour {
     MaterialPropertyBlock block = new MaterialPropertyBlock();
 
     foreach (LightScript light in lights) {
-      Renderer render = light.GetComponent<Renderer>();
-      render.GetPropertyBlock(block);
-
-      block.SetColor("_EmissionColor", light.color * intensity);
-      render.SetPropertyBlock(block);
+      light.SetColor(light.color, intensity);
 
       yield return new WaitForSeconds(lightDuration);
 
-      block.SetColor("_EmissionColor", Color.black);
-      render.SetPropertyBlock(block);
+      light.SetColor(Color.black, 1);
     }
 
     StartCoroutine(Runway());
