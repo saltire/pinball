@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6050043875806032926}
   - component: {fileID: 7095882038262506000}
   - component: {fileID: 8114243165650933998}
-  - component: {fileID: 8873198977987715503}
   - component: {fileID: 3306153596677635547}
   - component: {fileID: 6578556588677226959}
   - component: {fileID: 2885873224334126299}
@@ -30,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977377188423983237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.015, z: 0.0107}
-  m_LocalScale: {x: 0.06, y: 0.03, z: 0.02}
+  m_LocalPosition: {x: 0, y: 0.0151, z: 0.0107}
+  m_LocalScale: {x: 0.06, y: 0.03, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 94723b87151044e41a76ba6035956ee7, type: 2}
+  - {fileID: 2100000, guid: 0eee9b39a38a05d45bec85e2a9a46b79, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8873198977987715503
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 977377188423983237}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.2, z: 1.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3306153596677635547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.01
   hasTriggered: 0
+  hitSound: {fileID: 8300000, guid: 12f1db0f01a70cb4a9a5ca2c1705c296, type: 3}
 --- !u!65 &6578556588677226959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -121,12 +108,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977377188423983237}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2f2b79dc323705345acab59e129f1c5f, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0000001, z: 1}
-  m_Center: {x: 0, y: -0.001, z: 0}
+  m_Center: {x: 0, y: -0.002, z: 0}
 --- !u!54 &2885873224334126299
 Rigidbody:
   m_ObjectHideFlags: 0
