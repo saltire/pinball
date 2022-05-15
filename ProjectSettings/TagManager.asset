@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SpawnPoint
   - Ball
+  - SFX
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - Wall
   - Lighting
   - Camera
-  - 
-  - 
+  - Glass
+  - Ball
   - 
   - 
   - 

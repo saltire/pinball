@@ -8,7 +8,7 @@ public class GoatScript : MonoBehaviour {
   AudioSource source;
 
   void Start() {
-    source = FindObjectOfType<AudioSource>();
+    source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
   }
 
   void OnTriggerEnter(Collider other) {

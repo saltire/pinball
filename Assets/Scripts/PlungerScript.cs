@@ -15,7 +15,7 @@ public class PlungerScript : MonoBehaviour {
   void Start() {
     rb = GetComponent<Rigidbody>();
 
-    source = FindObjectOfType<AudioSource>();
+    source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
   }
 
   void FixedUpdate() {

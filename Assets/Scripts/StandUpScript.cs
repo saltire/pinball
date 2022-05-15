@@ -19,7 +19,7 @@ public class StandUpScript : MonoBehaviour {
         downPosition = transform.position + Vector3.down * transform.localScale.y;
 
         set = GetComponentInParent<StandUpSetScript>();
-        source = FindObjectOfType<AudioSource>();
+        source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
     }
 
     void Update() {

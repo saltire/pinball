@@ -17,7 +17,7 @@ public class FlipperScript : MonoBehaviour {
   AudioSource source;
 
   void Start() {
-    source = FindObjectOfType<AudioSource>();
+    source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
     hinge = GetComponent<HingeJoint>();
   }
 

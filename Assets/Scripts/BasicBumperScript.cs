@@ -18,7 +18,7 @@ public class BasicBumperScript : MonoBehaviour {
   void Start() {
     initialIntensity = bumperLight.intensity;
 
-    source = FindObjectOfType<AudioSource>();
+    source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
   }
 
   void Update() {

@@ -18,7 +18,7 @@ public class BallSpawnScript : MonoBehaviour {
   LightRunwayScript[] runways;
 
   void Start() {
-    source = FindObjectOfType<AudioSource>();
+    source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
     runways = FindObjectsOfType<LightRunwayScript>();
 
     Spawn();

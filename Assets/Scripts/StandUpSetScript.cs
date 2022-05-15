@@ -17,7 +17,7 @@ public class StandUpSetScript : MonoBehaviour {
   AudioSource source;
 
   void Start() {
-    source = FindObjectOfType<AudioSource>();
+    source = GameObject.FindGameObjectWithTag("SFX").GetComponent<AudioSource>();
 
     standups = GetComponentsInChildren<StandUpScript>();
     foreach (StandUpScript standup in standups) {
